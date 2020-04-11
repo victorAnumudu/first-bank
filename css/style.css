@@ -182,11 +182,29 @@
     background-color: #DEB42F;
     transition: .4s;
 }
+.secton2ToggleBtn{
+    display: none;
+}
+
 @media only screen and (max-width:568px){ 
     .nav2Img{
        width: 80px;
        height: 30px;
    }
+}
+@media only screen and (max-width:992px){ 
+    .secondNavDiv1{
+        width: auto;
+    }
+    .secondNavDiv2{
+        width: auto;
+    }
+    .secton2ToggleBtn{
+        display: block;
+    }
+    .nav2InputText, .nav2Anchor2, .nav2Anchor2InnerCon{
+        display: none;
+    }
 }
 /* <!-- end second navigation --> */
 
