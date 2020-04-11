@@ -185,6 +185,22 @@
 .secton2ToggleBtn{
     display: none;
 }
+.secton2Toggle{
+    padding: 2px;
+    color: rgb(2, 46, 100);
+    font-size: 20px;
+    cursor: pointer;
+}
+#secton2ToggleOpen{
+    display: inline;
+    color: rgb(153, 153, 153);
+    font-weight: 900;
+}
+#secton2ToggleClose{
+    display: none;
+    color: rgb(153, 153, 153);
+    font-weight: 900;
+}
 
 @media only screen and (max-width:568px){ 
     .nav2Img{

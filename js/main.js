@@ -40,3 +40,16 @@ function myMenuShow(c){
         }
     }
 }
+
+
+function navToggle(c){
+    var myToggleOpen = document.getElementById("secton2ToggleOpen");
+    var myToggleClose = document.getElementById("secton2ToggleClose");
+    if(c == myToggleOpen){
+        myToggleClose.style.display = "inline";
+        myToggleOpen.style.display = "none";
+    } else{
+        myToggleOpen.style.display = "inline";
+        myToggleClose.style.display= "none";
+    }
+}

@@ -106,13 +106,14 @@
 
         <!-- second navigation -->
         <nav class="secondNav row no-gutters bg-success">
-            <div class="secondNavDiv1 col-lg-6 row no-gutters">
+            <div class="secondNavDiv1 row no-gutters">
                 <a href="" class="nav2ImgAnchor">
                     <img class="nav2Img" src="images/section2/cropped-logo_blue-2.png" alt="FirstBank Logo">
                 </a>
-                <div class="nav2Para"><a href="" class="nav2Anchor" target="_blank">FirstOnline <br> Login</a></div>
+                <!-- <div class="nav2Para"><a href="" class="nav2Anchor" target="_blank">FirstOnline <br> Login</a></div> -->
             </div>
-            <div class="secondNavDiv2 col-lg-6 row no-gutters">
+            <div class="nav2Para"><a href="" class="nav2Anchor" target="_blank">FirstOnline <br> Login</a></div>
+            <div class="secondNavDiv2 row no-gutters">
                 <input type="text" class="nav2InputText">
                 <a href="" class="nav2Anchor2" target="_blank">Open an Account</a>
                 <li class="nav2Anchor2InnerCon">
@@ -126,9 +127,10 @@
                     </div>
                 </li>
                 <div class="secton2ToggleBtn">
-                    <i class="fas fa-phone-alt"></i>
-                    <i class="fas fa-search"></i>
-                    <i class="fas fa-bars"></i>
+                    <i class="secton2Toggle fas fa-phone-alt"></i>
+                    <i class="secton2Toggle fas fa-search"></i>
+                    <i class="secton2Toggle fas fa-bars" id="secton2ToggleOpen" onclick="navToggle(this)"></i>
+                    <i class="secton2Toggle fas fa-times" id="secton2ToggleClose" onclick="navToggle(this)"></i>
                 </div>
             </div>
         </nav>
