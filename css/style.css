@@ -262,7 +262,7 @@
     border-radius: 0 0 5px 5px;
 }
 .innerNav3Anchor{
-    display: inline-block;
+    display: block;
     width: 100%;
     color: #000;
     text-decoration: none;
@@ -282,7 +282,17 @@
 @media only screen and (max-width:992px){
      .nav3{
          display: none;
-     }  
+     } 
+     .nav3InnerUnorderedListCon{
+        position: static;
+        background-color: #F0F6FF;
+    }
+    .nav3Anchor{
+        text-align: left;
+    }
+    .innerNav3UnorderedList{
+        background-color: #F0F6FF;
+    }
 }
 /* <!-- end Third navigation --> */
 

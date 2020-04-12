@@ -41,15 +41,45 @@ function myMenuShow(c){
     }
 }
 
+// for third nav
+var nav2InputText = document.getElementById("nav2InputText");
+// var secton2ToggleSearch = document.getElementById("secton2ToggleSearch")
+var myToggleOpen = document.getElementById("secton2ToggleOpen");
+// myToggleOpen.setAttribute("class", "se")
+var myToggleClose = document.getElementById("secton2ToggleClose");
+var displayNav3 = document.getElementById("nav3");
+
+function screenResize(){
+    screenSize = document.body.clientWidth;
+    if(screenSize <= 992){
+        displayNav3.style.display = "none"
+        myToggleOpen.style.display = "inline";
+        myToggleClose.style.display = "none";
+        nav2InputText.style.display = "none"
+    } else{
+        displayNav3.style.display = "flex"
+        nav2InputText.style.display = "flex"
+    }
+}
 
 function navToggle(c){
-    var myToggleOpen = document.getElementById("secton2ToggleOpen");
-    var myToggleClose = document.getElementById("secton2ToggleClose");
     if(c == myToggleOpen){
-        myToggleClose.style.display = "inline";
         myToggleOpen.style.display = "none";
+        myToggleClose.style.display = "inline";
+        displayNav3.style.display = "block"
+    } else if(c == myToggleClose){
+            myToggleClose.style.display = "none";
+            myToggleOpen.style.display = "inline";
+            displayNav3.style.display = "none"
     } else{
-        myToggleOpen.style.display = "inline";
-        myToggleClose.style.display= "none";
+        if(nav2InputText.style.display == "none"){
+            nav2InputText.style.display = "block";
+            nav2InputText.style.position = "absolute";
+            nav2InputText.style.width = "100%";
+            nav2InputText.style.top = "100px";
+            nav2InputText.style.right = "0px";
+        } else {
+            nav2InputText.style.display = "none";
+        }
     }
 }

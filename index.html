@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onresize="screenResize()">
     <div class="container-fluid p-0">
         <!-- top navigation blue color -->
         <nav class="topBlue">
@@ -114,7 +114,7 @@
             </div>
             <div class="nav2Para"><a href="" class="nav2Anchor" target="_blank">FirstOnline <br> Login</a></div>
             <div class="secondNavDiv2 row no-gutters">
-                <input type="text" class="nav2InputText">
+                <input type="text" class="nav2InputText" id="nav2InputText" >
                 <a href="" class="nav2Anchor2" target="_blank">Open an Account</a>
                 <li class="nav2Anchor2InnerCon">
                     <a href="" class="nav2Anchor2" target="_blank">Internet Banking</a>
@@ -128,7 +128,7 @@
                 </li>
                 <div class="secton2ToggleBtn">
                     <i class="secton2Toggle fas fa-phone-alt"></i>
-                    <i class="secton2Toggle fas fa-search"></i>
+                    <i class="secton2Toggle fas fa-search" id="secton2ToggleSearch" onclick="navToggle(this)"></i>
                     <i class="secton2Toggle fas fa-bars" id="secton2ToggleOpen" onclick="navToggle(this)"></i>
                     <i class="secton2Toggle fas fa-times" id="secton2ToggleClose" onclick="navToggle(this)"></i>
                 </div>
@@ -137,7 +137,7 @@
         <!-- end second navigation -->
         
         <!-- Third navigation -->
-        <ul class="nav3 row no-gutters m-0">
+        <ul class="nav3 row no-gutters m-0" id="nav3">
             <li class="nav3List">
                 <a href="" class="nav3Anchor" target="_blank">Accounts</a>
                 <div class="nav3InnerUnorderedListCon" onmouseover="myActive(this)" onmouseout="myNotActive(this)">
