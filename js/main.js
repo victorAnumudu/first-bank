@@ -41,27 +41,34 @@ function myMenuShow(c){
     }
 }
 
-// for third nav
+// function for third nav toggling activity
+
+// declaration of variables
 var nav2InputText = document.getElementById("nav2InputText");
-// var secton2ToggleSearch = document.getElementById("secton2ToggleSearch")
 var myToggleOpen = document.getElementById("secton2ToggleOpen");
 // myToggleOpen.setAttribute("class", "se")
 var myToggleClose = document.getElementById("secton2ToggleClose");
 var displayNav3 = document.getElementById("nav3");
+var secondNavDiv2 = document.getElementById("secondNavDiv2")
 
+// function to determine the size of the browser window
 function screenResize(){
     screenSize = document.body.clientWidth;
     if(screenSize <= 992){
         displayNav3.style.display = "none"
         myToggleOpen.style.display = "inline";
         myToggleClose.style.display = "none";
-        nav2InputText.style.display = "none"
+        secondNavDiv2.style.display = "none";
+        nav2InputText.style.display = "none";
     } else{
         displayNav3.style.display = "flex"
-        nav2InputText.style.display = "flex"
+        secondNavDiv2.style.display = "flex";
+        nav2InputText.style.display = "flex";
+        nav2InputText.style.width = "17%";
     }
 }
 
+// function thats toggles the menu Icon
 function navToggle(c){
     if(c == myToggleOpen){
         myToggleOpen.style.display = "none";
@@ -73,13 +80,13 @@ function navToggle(c){
             displayNav3.style.display = "none"
     } else{
         if(nav2InputText.style.display == "none"){
+            nav2InputText.parentElement.style.display = "block";
             nav2InputText.style.display = "block";
-            nav2InputText.style.position = "absolute";
             nav2InputText.style.width = "100%";
-            nav2InputText.style.top = "100px";
-            nav2InputText.style.right = "0px";
         } else {
             nav2InputText.style.display = "none";
         }
     }
 }
+
+// END of function for third nav toggling activity

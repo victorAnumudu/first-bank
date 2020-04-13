@@ -77,11 +77,16 @@
 /* style for top blue nav */
 
 /* <!-- second navigation --> */
-.secondNav{
+.secondNavCon{
     background-image: url(../images/section2/website_fabric.jpg);
     background-size: 100% cover;
     background-repeat: no-repeat;
     justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.secondNav{
+    justify-content: space-between;
+    flex-wrap: nowrap;
     padding: 10px 0;
 }
 .secondNavDiv1{
@@ -202,26 +207,29 @@
     font-weight: 900;
 }
 
+@media only screen and (max-width:992px){ 
+    .secondNavCon{
+        display: block;
+    }
+    .secton2ToggleBtn{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0 20px 0 10px !important;
+    }
+    .nav2InputText, .nav2Anchor2, .nav2Anchor2InnerCon, .secondNavDiv2{
+        display: none;
+    }
+}
+
 @media only screen and (max-width:568px){ 
     .nav2Img{
        width: 80px;
        height: 30px;
    }
 }
-@media only screen and (max-width:992px){ 
-    .secondNavDiv1{
-        width: auto;
-    }
-    .secondNavDiv2{
-        width: auto;
-    }
-    .secton2ToggleBtn{
-        display: block;
-    }
-    .nav2InputText, .nav2Anchor2, .nav2Anchor2InnerCon{
-        display: none;
-    }
-}
+
 /* <!-- end second navigation --> */
 
 /* <!-- Third navigation --> */
@@ -283,15 +291,13 @@
      .nav3{
          display: none;
      } 
-     .nav3InnerUnorderedListCon{
+     .nav3InnerUnorderedListCon, .innerNav3UnorderedList{
+        display: none;
         position: static;
         background-color: #F0F6FF;
     }
     .nav3Anchor{
         text-align: left;
-    }
-    .innerNav3UnorderedList{
-        background-color: #F0F6FF;
     }
 }
 /* <!-- end Third navigation --> */
@@ -439,6 +445,7 @@
     }
     .section4SlideImage2MenuCon{
         flex-direction: row;
+        justify-content: start;
         margin: auto;
         width: 100%;
         transform: none;
@@ -463,6 +470,12 @@
         justify-content: center;
         left: 0;
         padding: 20px;
+    }
+    .section4SlideImage2Menu1{
+        display: none;
+    }
+    .section4SlideImage2Menu2{
+        margin-right: 10px;
     }
     .section4SlideInnerCon{
         flex-wrap: wrap;
@@ -707,6 +720,15 @@
     67%{top: -200%;}
     99%{top: -200%;}
     100%{top: 300%;}
+}
+
+@media only screen and (max-width: 768px){
+    .section7Con{
+        display: block;
+    }
+    .section7UnorderedListIcon{
+        display: flex;
+    }
 }
 /* End of section7*/
 

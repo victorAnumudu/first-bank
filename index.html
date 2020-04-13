@@ -105,15 +105,25 @@
         <!-- End top navigation blue color -->
 
         <!-- second navigation -->
-        <nav class="secondNav row no-gutters bg-success">
-            <div class="secondNavDiv1 row no-gutters">
-                <a href="" class="nav2ImgAnchor">
-                    <img class="nav2Img" src="images/section2/cropped-logo_blue-2.png" alt="FirstBank Logo">
-                </a>
-                <!-- <div class="nav2Para"><a href="" class="nav2Anchor" target="_blank">FirstOnline <br> Login</a></div> -->
-            </div>
-            <div class="nav2Para"><a href="" class="nav2Anchor" target="_blank">FirstOnline <br> Login</a></div>
-            <div class="secondNavDiv2 row no-gutters">
+        <div class="secondNavCon row no-gutters bg-info">
+            <nav class="secondNav row no-gutters col-xl-6 col-lg-4">
+                <div class="secondNavDiv1 row no-gutters">
+                    <a href="" class="nav2ImgAnchor">
+                        <img class="nav2Img" src="images/section2/cropped-logo_blue-2.png" alt="FirstBank Logo">
+                    </a>
+                    <!-- <div class="nav2Para"><a href="" class="nav2Anchor" target="_blank">FirstOnline <br> Login</a></div> -->
+                </div>
+    
+                <div class="nav2Para"><a href="" class="nav2Anchor" target="_blank">FirstOnline <br> Login</a></div>
+    
+                <div class="secton2ToggleBtn row no-gutters">
+                    <i class="secton2Toggle fas fa-phone-alt"></i>
+                    <i class="secton2Toggle fas fa-search" id="secton2ToggleSearch" onclick="navToggle(this)"></i>
+                    <i class="secton2Toggle fas fa-bars" id="secton2ToggleOpen" onclick="navToggle(this)"></i>
+                    <i class="secton2Toggle fas fa-times" id="secton2ToggleClose" onclick="navToggle(this)"></i>
+                </div>
+            </nav>
+            <div class="secondNavDiv2 row no-gutters col-xl-6 col-lg-8" id="secondNavDiv2" >
                 <input type="text" class="nav2InputText" id="nav2InputText" >
                 <a href="" class="nav2Anchor2" target="_blank">Open an Account</a>
                 <li class="nav2Anchor2InnerCon">
@@ -126,14 +136,8 @@
                         </div>
                     </div>
                 </li>
-                <div class="secton2ToggleBtn">
-                    <i class="secton2Toggle fas fa-phone-alt"></i>
-                    <i class="secton2Toggle fas fa-search" id="secton2ToggleSearch" onclick="navToggle(this)"></i>
-                    <i class="secton2Toggle fas fa-bars" id="secton2ToggleOpen" onclick="navToggle(this)"></i>
-                    <i class="secton2Toggle fas fa-times" id="secton2ToggleClose" onclick="navToggle(this)"></i>
-                </div>
             </div>
-        </nav>
+        </div>
         <!-- end second navigation -->
         
         <!-- Third navigation -->
@@ -285,13 +289,13 @@
             
             <div class="section4SlideImage2" id="section4SlideImage2" onmouseover="shiftMe(this)">
                 <div class="section4SlideImage2MenuCon">
-                    <div class="section4SlideImage2Menu" onmouseover="myMenuShow(this)">
+                    <div class="section4SlideImage2Menu section4SlideImage2Menu1" onmouseover="myMenuShow(this)">
                         <p class="section4SlideImage2MenuPara">Event</p>
                     </div>
-                    <div class="section4SlideImage2Menu" onmouseover="myMenuShow(this)">
+                    <div class="section4SlideImage2Menu section4SlideImage2Menu2" onmouseover="myMenuShow(this)">
                         <p class="section4SlideImage2MenuPara">SMEConnect</p>
                     </div>
-                    <div class="section4SlideImage2Menu" onmouseover="myMenuShow(this)">
+                    <div class="section4SlideImage2Menu section4SlideImage2Menu3" onmouseover="myMenuShow(this)">
                         <p class="section4SlideImage2MenuPara">Projects Showcase</p>
                     </div>
                 </div>
@@ -440,13 +444,17 @@
             </div>
             <div class="section7UnorderedCon">
                 <h6 class="section7Heading">Follow Us</h6>
-                <div class="section7UnorderedList">
-                    <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-facebook-f"></i></a>
-                    <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-twitter"></i></a>
-                    <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-youtube"></i></a> <br>
-                    <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-instagram"></i></a>
-                    <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-linkedin-in"></i></a>
-                    <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-google-plus-g"></i></a> 
+                <div class="section7UnorderedList section7UnorderedListIcon">
+                    <div class="section7AnchorIconCon">
+                        <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-facebook-f"></i></a>
+                        <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-twitter"></i></a>
+                        <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-youtube"></i></a>
+                    </div>
+                    <div class="section7AnchorIconCon">
+                        <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-instagram"></i></a>
+                        <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-linkedin-in"></i></a>
+                        <a href="" class="section7AnchorIcon"><i class="section7Icon fab fa-google-plus-g"></i></a> 
+                    </div>
                 </div> 
             </div>
             <div class="section7UnorderedCon">
